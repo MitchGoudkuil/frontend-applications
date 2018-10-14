@@ -1,4 +1,4 @@
-# hello-world
+# Frontend-applications
 
 ## Project setup
 ```
@@ -24,3 +24,5 @@ npm run test
 ```
 npm run lint
 ```
+
+  - [ ] Hello
