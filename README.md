@@ -70,3 +70,19 @@ npm run lint
    * Made my first commit.
    * Setup my README file.
    * Setup todo list for the upcoming week.
+
+###To-do upcoming week
+
+   * sketching down the parts the form needs to continue.
+   * Start buildup of the form and the connection between the questionair and the form.
+   * Validation of the code and showing the end result in percentages.
+   * All the way at the end, looking at visual styling of the app.
+   * Maybe add some extra features to the app.
+
+
+**Ideas and Possible features**
+
+   * If an input is not filled in or checked show it in colors etc.
+   * Possibility to add extra notes to a file.
+   * Possibility to mark an input as "very important" to show that question before a next visit to the client.
+   * Possibility to watch a file anonymously or to login if you have a higher rank to watch more detailed info about the client.
