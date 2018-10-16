@@ -8,6 +8,7 @@ import risico from './components/risico.vue'
 Vue.use(Router)
 
 export default new Router({
+
   routes: [
     {
       path: '/',

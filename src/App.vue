@@ -29,20 +29,17 @@
 
 <script>
 import skills from './components/skills.vue'
-// import risico from './components/risico.vue'
 
 export default {
   name: 'app',
   components: {
     skills,
-    // risico
   },
 }
 </script>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-
 
 *{
 box-sizing: border-box;
@@ -128,6 +125,10 @@ a{
     }
   }
 
+}
+
+.active {
+  color: red!important;
 }
 
 </style>

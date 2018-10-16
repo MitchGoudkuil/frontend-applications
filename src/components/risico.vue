@@ -18,30 +18,40 @@
       <div class="question-tile">
         <p>Persoonsgegevens</p>
         <div class="filled-in">
-          <span>Hallo</span>
+          hey
 
         </div>
+        <div v-for="data in myJson">{{ data }}</div>
       </div>
     </div>
+  </div>
 
 </template>
 
 <script>
 
+import json from '../json/data.json'
+     export default{
+         data(){
+             return{
+                 myJson: json
+             }
+         }
+     }
 
 </script>
 
 <style lang="scss" scoped>
 
-
 .risico-container{
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1.5fr;
+  grid-template-columns: 1fr 3fr;
 
     .profile-container{
       padding: 1.5em;
       list-style-type: none;
       width: 100%;
+
 
       .profile-tile{
         background-color: #fff;
@@ -54,26 +64,18 @@
         bottom: 0;
         background-color: orange;
         color: #fff;
-
-
       }
     }
 
     .question-container{
       padding: 1.5em;
 
-
       .question-tile{
         background-color: #fff;
         display: flex;
         border-left: 20px solid green;
+        text-align: center;
 
-        .category-color{
-
-          width: 2em;
-          height: 100%;
-          background-color: green;
-        }
       }
 
     }
