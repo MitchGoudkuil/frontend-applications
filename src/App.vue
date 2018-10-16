@@ -22,8 +22,6 @@
     <div id="content-container">
       <router-view />
     </div>
-
-
   </div>
 </template>
 
@@ -65,6 +63,12 @@ a{
   text-decoration: none;
 }
 
+.tile{
+  -webkit-box-shadow: 9px 14px 49px -11px rgba(201,201,201,1);
+-moz-box-shadow: 9px 14px 49px -11px rgba(201,201,201,1);
+box-shadow: 9px 14px 49px -11px rgba(201,201,201,1);
+}
+
 .button{
   padding: 1em 3em;
   text-align: center;
@@ -74,6 +78,8 @@ a{
 #app{
   display: grid;
   grid-template-columns: 2fr 10fr;
+  overflow-x: hidden;
+   overflow-y: auto;
 
 }
 
@@ -83,6 +89,8 @@ a{
   left: 0;
   background-color: #0C0F21;
   font-weight: 100;
+  position: relative;
+
 
   a{
     color: #fff;
@@ -124,7 +132,6 @@ a{
       }
     }
   }
-
 }
 
 .active {

@@ -73,11 +73,11 @@ npm run lint
 
 ### To-do upcoming week
 
-   * sketching down the parts the form needs to continue.
-   * Start buildup of the form and the connection between the questionair and the form.
-   * Validation of the code and showing the end result in percentages.
-   * All the way at the end, looking at visual styling of the app.
-   * Maybe add some extra features to the app.
+- [X] sketching down the parts the form needs to continue.
+- [X] Start buildup of the form and the connection between the questionair and the form.
+- [ ] Validation of the code and showing the end result in percentages.
+- [ ] All the way at the end, looking at visual styling of the app.
+- [ ] Maybe add some extra features to the app.
 
 
 **Ideas and Possible features**
@@ -86,3 +86,18 @@ npm run lint
    * Possibility to add extra notes to a file.
    * Possibility to mark an input as "very important" to show that question before a next visit to the client.
    * Possibility to watch a file anonymously or to login if you have a higher rank to watch more detailed info about the client.
+
+### Second week
+
+* **Monday**
+   * Had a presentation from the people who could use an app like the one we are making. They told us about the way of working and the steps that need to be taken for someone to get removed from the household.
+   * Made a quick design of the form page and the menu that I want to make in combination with the router.
+   * Added sass to the project with npm. First read some documentation and after that implemented it. Its really easy to do in Vue.
+   * Set-up the menu from the design and im really happy with the way it looks, even though its not that important. Im really amazed about how easy the Vue router works.
+   * Started with the build-up of the risk indication page which was really easy now i'm used to work with the router. Added the tiles where the form inputs are going to be in.
+
+* **Tuesday**
+   * Continued the buildup of the risk indication page and made some minor adjustments to it.
+   * Connected the data.json file to the project and tried to import it on the page. Now the issue started that I never worked with a Json file before so I had no clue how to start. I got a lot of help from Tim who made a filter to show every category only once if there are doubles. I get what he is writing down in code but know that it is way to hard for me to do that myself.
+   * Tried to connect colors to the category tiles but failed.
+   * Updated the README with Monday and Tuesday.
