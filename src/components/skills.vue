@@ -1,18 +1,17 @@
 <template>
   <div class="hello">
+    <div class="notition-title">
+      <h3>Extra Notities</h3>
+    </div>
     <div class="holder">
-
-<form @submit.prevent="addSkill">
-    <input type="text" name="" value="" placeholder="Insert the skill you have" v-model="skill">
-</form>
-
+      <form @submit.prevent="addSkill">
+          <input type="text" name="" value="" placeholder="Schrijf hier uw notitie" v-model="skill">
+      </form>
       <ul>
         <li v-for="(data, index) in skills" :key="index">
             {{data.skill}}
         </li>
       </ul>
-
-      <p>These are the skills that you posses</p>
     </div>
   </div>
 </template>
@@ -24,9 +23,6 @@ export default {
     return {
       skill: '',
     skills: [
-      {"skill" : "Vue.js"},
-      {"skill" : "drinking"},
-      {"skill" : "wobling"},
     ],
   }
 
@@ -48,6 +44,12 @@ methods: {
     background: #fff;
   }
 
+  .notition-title{
+    background-color: #0C0F21;
+    color: #fff;
+    padding: 1em;
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -56,17 +58,15 @@ methods: {
 
   ul li {
     padding: 20px;
-    font-size: 1.3em;
-    background-color: #E0EDF4;
-    border-left: 5px solid #3EB3F6;
-    margin-bottom: 2px;
+    font-size: .9em;
+    background-color: #fff;
     color: #3E5252;
   }
 
   p {
     text-align:center;
     padding: 30px 0;
-    color: gray;
+    color: #A5ADD7!important;
   }
 
   .container {
@@ -75,11 +75,13 @@ methods: {
 
   input {
     width: calc(100% - 40px);
-    border: 0;
+    border: 0!important;
     padding: 20px;
     font-size: 1.3em;
-    background-color: #323333;
-    color: #687F7F;
+    background-color: #272F52;
+    color: #A5ADD7!important;
+    border-radius: 0!important;
+    margin: 0!important;
   }
 
 </style>

@@ -3,13 +3,36 @@
 
       <div class="recently-opened">
         <div class="white tile">
-          <h2>Hallo {{username}}, deze profielen heeft u onlangs geopend.</h2>
+          <h1>Hallo {{username}}, deze profielen heeft u onlangs geopend.</h1>
+        </div>
+        <div class="opened-tile">
+          <div class="profile white tile">
+            <h2>Luna May</h2>
+            <p>Risico: 4.20%</p>
+            <p class="small">Laatst bijgewerkt: Gisteren</p>
+            <div class="open-button button">
+              Openen
+            </div>
+          </div>
+
+
         </div>
 
       </div>
       <div class="to-complete tile">
-        <h3>Deze profielen hebben nog uw aandacht nodig</h3>
-        <p></p>
+        <h3>Deze profielen hebben een hoog risico!</h3>
+
+        <div class="risk-profiles">
+          <div class="profile white padding">
+            <h2>Luna May</h2>
+            <p>Risico: 4.20%</p>
+            <p class="small">Laatst bijgewerkt: Maart 14 2018</p>
+            <div class="open-button button">
+              Openen
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="introduction tile">
 
@@ -53,6 +76,69 @@ export default {
 
     }
   }
+
+  .padding{
+    padding: 1.5em;
+  }
+
+  .to-complete{
+    background-color: #272F52;
+
+    h3{
+      color: #fff;
+    }
+
+    .risk-profiles{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+
+      .open-button{
+        background-color: #E8B142;
+        color: #fff;
+        position: absolute;
+        bottom: -1.5em;
+        margin-left: 10%;
+
+      }
+      .small{
+        font-size: 13px;
+        color: #777;
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+  .opened-tile{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    position: relative;
+    width: 100%;
+
+    .profile{
+      margin-top: 1em;
+    }
+
+    .small{
+      font-size: 13px;
+      color: #777;
+      padding-bottom: 1em;
+    }
+    .open-button{
+      background-color: #E8B142;
+      color: #fff;
+      position: absolute;
+      bottom: -1.5em;
+      margin-left: 10%;
+
+    }
+
+  }
+
+
+
+
 
 }
 

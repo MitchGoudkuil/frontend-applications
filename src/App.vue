@@ -22,7 +22,7 @@
               </ul>
             </nav>
 
-            <router-link to="/profile">
+            <router-link to="/login">
               <div class="logout">
                   <img src="./assets/off.png" alt="">
                   <p>Logout</p>
@@ -57,6 +57,8 @@ export default {
         username: 'Empty'
       }
   },
+
+  // Hulp van dennis met het opzetten van een inlog voor het bekijken van de app.
   mounted() {
     this.$data.inlog = false
   },
@@ -159,6 +161,8 @@ select {
   background-color: #0C0F21;
   font-weight: 100;
   position: fixed;
+  max-width: 16.5em;
+  width: 100%;
 
 
   a{

@@ -18,6 +18,11 @@ export default new Router({
       props: true
     },
     {
+      path: '/login',
+      name: 'login',
+      component: login,
+    },
+    {
       path: '/profile',
       name: 'profile',
       component: profile,

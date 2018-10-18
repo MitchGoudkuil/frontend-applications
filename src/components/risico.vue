@@ -4,22 +4,20 @@
         <div class="tile profile-tile">
           <h1>Risico analyse</h1>
           <div class="result">
-            <h3 id="a-result"></h3>
+            <h3 id="a-result">0.00%</h3>
           </div>
 
           <p class="bold">Gebruiksaanwijzing<p>
             <p>Vul alle vragen in door de juiste opties te selecteren en druk vervolgens op "Geef risico indicatie" om een risico indicatie te krijgen.</p>
-            <a src="/" class="save-button button">
-              Opslaan
-            </a>
+            <a src="/" class="save-button button">Opslaan</a>
         </div>
+        <skills />
 
     </div>
 
     <div class="question-container">
         <div v-for="category in filterCategories">
           <div @click="stateChange(category)" class="tile question-tile">
-            <!-- <button @click="logThis" type="button" name="button"></button> -->
         <div class="upper-part">
             <p>{{ category }}</p>
             <div class="filled-in">
@@ -33,7 +31,7 @@
               <div class="question-divided" v-if="category == currentCatagory" >
                 <label v-for="item in currentOption">{{ item.Vraag}}
                   <select name="" @change="handleValue" :data-id="item.id">
-                    <option disabled selected>Selecteer ieksss</option>
+                    <option disabled selected>Selecteer</option>
                     <option v-for="answer in item.Opties" :value="answer.Gewicht" >{{ answer.Antwoord }}</option>
                   </select>
                 </label>
@@ -43,7 +41,7 @@
           </div>
         </div>
       </div>
-      <skills />
+
     </div>
 
   </div>
@@ -159,6 +157,7 @@ import skills from '../components/skills.vue'
         background-color: #fff;
         padding: 1em 1em 3em;
         position: relative;
+        margin-bottom: 2.5em;
 
       }
 
@@ -184,7 +183,7 @@ import skills from '../components/skills.vue'
         margin-bottom: 1em;
         width: 100%;
         position: relative;
-        border-left: 20px solid;
+        border-left: 20px solid #63B324;
         transition: all .2s ease-in-out;
 
         &:hover{
@@ -215,6 +214,7 @@ import skills from '../components/skills.vue'
             .question-divided{
               display: grid;
               grid-template-columns: 1fr 1fr;
+              grid-column-gap: .2em;
               text-align: left;
 
               select{
