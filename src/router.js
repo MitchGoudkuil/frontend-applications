@@ -5,25 +5,29 @@ import home from './components/home.vue'
 import profile from './components/profile.vue'
 import risico from './components/risico.vue'
 
+import login from './components/login.vue'
+
 Vue.use(Router)
 
 export default new Router({
-
   routes: [
     {
       path: '/',
       name: 'home',
-      component: home
+      component: home,
+      props: true
     },
     {
       path: '/profile',
       name: 'profile',
-      component: profile
+      component: profile,
+      props: true
     },
     {
       path: '/risico',
       name: 'risico',
-      component: risico
+      component: risico,
+      props: true
     }
   ]
 })

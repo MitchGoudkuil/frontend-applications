@@ -1,18 +1,6 @@
 <template>
     <div class="home">
-
-      <div class="recently-opened">
-        <div class="white tile">
-          <h2>Hallo {{username}}, deze profielen heeft u onlangs geopend.</h2>
-        </div>
-
-      </div>
-      <div class="to-complete tile">
-        <h3>Deze profielen hebben nog uw aandacht nodig</h3>
-        <p></p>
-      </div>
-      <div class="introduction tile">
-
+      <div class="introduction">
         <h3>Introductie</h3>
         <p>
   Deze beslissingondersteuningstool kan gebruikt worden door hulpverleners om een objectieve risico-indicatie te krijgen op een zwaardere maatregel op basis van kenmerken van het kind, de ouders en het huishouden. Onder zwaardere maatregelen vallen in dit geval jeugdhulp met verblijf, jeugdbeschermingsmaatregelen en jeugdreclasseringsmaatregelen.
@@ -21,20 +9,11 @@
 
   Voor hulp bij het gebruik van deze tool, kunt u gebruik maken van de handleiding die u hier kunt downloaden:</p>
       </div>
-
     </div>
 </template>
 
 <script>
-export default {
-    name: 'home',
-    props: ['username'],
-    methods: {
-  },
-  mounted() {
-    console.log(this)
-  }
-}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -44,10 +23,11 @@ export default {
   padding: 1.5em;
   column-gap: 1em;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: 2fr 5fr;
 
   .introduction{
   background-color: #fff;
+  padding: 0.5em 1em;
 
     p{
 
