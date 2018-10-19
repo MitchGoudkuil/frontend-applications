@@ -119,7 +119,7 @@ npm run lint
    * Updated README for the last time so it is up to date for the presentation.
 
 
-#What I learned this two weeks:
+# What I learned this two weeks:
 
 **Git**
 
